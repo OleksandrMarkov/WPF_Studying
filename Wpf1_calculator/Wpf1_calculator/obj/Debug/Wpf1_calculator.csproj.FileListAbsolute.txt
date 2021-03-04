@@ -1,0 +1,15 @@
+E:\projects\Wpf1_calculator\Wpf1_calculator\bin\Debug\Wpf1_calculator.exe.config
+E:\projects\Wpf1_calculator\Wpf1_calculator\bin\Debug\Wpf1_calculator.exe
+E:\projects\Wpf1_calculator\Wpf1_calculator\bin\Debug\Wpf1_calculator.pdb
+E:\projects\Wpf1_calculator\Wpf1_calculator\obj\Debug\Wpf1_calculator.csprojAssemblyReference.cache
+E:\projects\Wpf1_calculator\Wpf1_calculator\obj\Debug\MainWindow.g.cs
+E:\projects\Wpf1_calculator\Wpf1_calculator\obj\Debug\App.g.cs
+E:\projects\Wpf1_calculator\Wpf1_calculator\obj\Debug\Wpf1_calculator_MarkupCompile.cache
+E:\projects\Wpf1_calculator\Wpf1_calculator\obj\Debug\Wpf1_calculator_MarkupCompile.lref
+E:\projects\Wpf1_calculator\Wpf1_calculator\obj\Debug\MainWindow.baml
+E:\projects\Wpf1_calculator\Wpf1_calculator\obj\Debug\Wpf1_calculator.g.resources
+E:\projects\Wpf1_calculator\Wpf1_calculator\obj\Debug\Wpf1_calculator.Properties.Resources.resources
+E:\projects\Wpf1_calculator\Wpf1_calculator\obj\Debug\Wpf1_calculator.csproj.GenerateResource.cache
+E:\projects\Wpf1_calculator\Wpf1_calculator\obj\Debug\Wpf1_calculator.csproj.CoreCompileInputs.cache
+E:\projects\Wpf1_calculator\Wpf1_calculator\obj\Debug\Wpf1_calculator.exe
+E:\projects\Wpf1_calculator\Wpf1_calculator\obj\Debug\Wpf1_calculator.pdb
