@@ -1,0 +1,35 @@
+﻿<Window x:Class="Wpf2_UsersApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf2_UsersApp"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="UsersApp" Height="600" Width="800">
+    <!-- color scheme / color picker-->
+        <Grid Background="#FFB273">
+        <!-- block -->
+            <Border MinWidth="400" MaxWidth="550" Margin="15"
+         Background="#FF9640" VerticalAlignment="Center"
+         CornerRadius="20" Padding="40">
+            <!-- block shadow-->
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" ShadowDepth="0" Color="LightGray"/>
+            </Border.Effect>
+            <StackPanel>
+                <TextBlock Text="Hello, buddy!" FontSize="30" FontWeight="Bold" Margin="0 0 0 20"></TextBlock>
+                <Grid Margin=" 0 0 0 20">
+                    <Button HorizontalAlignment="Left" Content="Sign up"></Button>
+                    <Button HorizontalAlignment="Right" Content="Sign in" Style="{StaticResource MaterialDesignFlatButton}"></Button>
+                </Grid>
+                <!-- text field-->
+                <TextBox materialDesign:HintAssist.Hint="Login: " Style="{StaticResource MaterialDesignFloatingHintTextBox}"></TextBox>
+                <PasswordBox materialDesign:HintAssist.Hint="Login: " Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"></PasswordBox>
+                <PasswordBox materialDesign:HintAssist.Hint="Password: " Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"></PasswordBox>
+                <TextBox materialDesign:HintAssist.Hint="Email: " Style="{StaticResource MaterialDesignFloatingHintTextBox}"></TextBox>
+                <Button Content="Sign in" Margin="0 20"></Button>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
