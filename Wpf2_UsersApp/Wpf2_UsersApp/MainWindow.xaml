@@ -27,7 +27,7 @@
                     <Button HorizontalAlignment="Left" Content="Sign up"></Button>
                     <Button HorizontalAlignment="Right" Click="btn_to_auth_form_click" Content="Sign in" Style="{StaticResource MaterialDesignFlatButton}"></Button>
                 </Grid>
-                
+                           
                 
                 
                 <!-- text field-->
@@ -35,7 +35,7 @@
                 <PasswordBox x:Name="text_box_password" materialDesign:HintAssist.Hint="Password: " Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"></PasswordBox>
                 <PasswordBox x:Name="text_box_password2" materialDesign:HintAssist.Hint="Confirm password: " Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"></PasswordBox>
                 <TextBox x:Name="text_box_email" materialDesign:HintAssist.Hint="Email: " Style="{StaticResource MaterialDesignFloatingHintTextBox}"></TextBox>
-                <Button Content="Sign up" Margin="0 20" Click="btn_sign_up_click"></Button>
+                <Button Content="Sign up" x:Name="btn_sign_up" Margin="0 20" Click="btn_sign_up_click"></Button>
             </StackPanel>
         </Border>
     </Grid>

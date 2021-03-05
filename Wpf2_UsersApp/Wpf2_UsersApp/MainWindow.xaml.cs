@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using System.Windows.Media.Animation; // animation
+
 namespace Wpf2_UsersApp
 {
     /// <summary>
@@ -28,7 +30,15 @@ namespace Wpf2_UsersApp
 
             DB = new AppContext();
 
-           /* TEST OF ADDING TO DB
+            // BUTTON'S ANIMATION
+            DoubleAnimation animation = new DoubleAnimation();
+            animation.From = 0;
+            animation.To = 450;
+            animation.Duration = TimeSpan.FromSeconds(3);
+            btn_sign_up.BeginAnimation(Button.WidthProperty, animation);
+
+           
+            /* TEST OF ADDING TO DB
             * List<User> Users = DB.Users.ToList();
             string str = "";
 

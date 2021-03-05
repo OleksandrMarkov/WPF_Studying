@@ -7,6 +7,26 @@
         mc:Ignorable="d"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         Title="UsersApp" Height="450" Width="800">
+
+    <!--ANIMATION-->
+        <Window.Triggers>
+        <EventTrigger RoutedEvent="Loaded">
+            <EventTrigger.Actions>
+                <BeginStoryboard>
+                    <Storyboard TargetProperty = "Width" TargetName ="btn_sign_in">
+                        <DoubleAnimation From="0" To="450"
+                                         AutoReverse="True"
+                                         RepeatBehavior="5x"
+                            Duration="0:0:3">
+                            
+                        </DoubleAnimation>
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger.Actions>
+        </EventTrigger>
+    </Window.Triggers>
+    
+    
     <!-- color scheme / color picker-->
     <Grid Background="#FFB273">
         <!-- block -->
@@ -28,7 +48,7 @@
                 <!-- text field-->
                 <TextBox x:Name="text_box_login" materialDesign:HintAssist.Hint="Login: " Style="{StaticResource MaterialDesignFloatingHintTextBox}"></TextBox>
                 <PasswordBox x:Name="text_box_password" materialDesign:HintAssist.Hint="Password: " Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"></PasswordBox>
-                <Button Content="Sign in" Margin="0 20" Click="btn_sign_in_click"></Button>
+                <Button Content="Sign in" x:Name="btn_sign_in" Margin="0 20" Click="btn_sign_in_click"></Button>
             </StackPanel>
         </Border>
     </Grid>
