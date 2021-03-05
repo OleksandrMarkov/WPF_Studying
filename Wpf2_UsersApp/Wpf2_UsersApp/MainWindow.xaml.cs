@@ -93,7 +93,20 @@ namespace Wpf2_UsersApp
 
                 DB.Users.Add(user);
                 DB.SaveChanges();
+
+                AuthorizationWindow1 window = new AuthorizationWindow1();
+                window.Show();
+                //this.Hide();
+                this.Close();
             }
+        }
+
+        private void btn_to_auth_form_click(object sender, RoutedEventArgs e)
+        {
+            AuthorizationWindow1 window = new AuthorizationWindow1();
+            window.Show();
+            //this.Hide();
+            this.Close();
         }
     }
 }

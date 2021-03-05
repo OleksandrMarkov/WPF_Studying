@@ -59,6 +59,11 @@ namespace Wpf2_UsersApp
 
                 if(auth_user != null)
                 {
+                    User_window uw = new User_window();
+                    uw.Show();
+                   // this.Hide();
+                    this.Close();
+                      
                     MessageBox.Show("all right!;)");
                 }
                 else
@@ -68,6 +73,14 @@ namespace Wpf2_UsersApp
 
                     
             }
+        }
+
+        private void btn_to_main_form_click(object sender, RoutedEventArgs e)
+        {
+            MainWindow window = new MainWindow();
+            window.Show();
+            //this.Hide();
+            this.Close();
         }
     }
 }

@@ -25,7 +25,7 @@
 -->
                 <Grid Margin=" 0 0 0 20">
                     <Button HorizontalAlignment="Left" Content="Sign up"></Button>
-                    <Button HorizontalAlignment="Right" Content="Sign in" Style="{StaticResource MaterialDesignFlatButton}"></Button>
+                    <Button HorizontalAlignment="Right" Click="btn_to_auth_form_click" Content="Sign in" Style="{StaticResource MaterialDesignFlatButton}"></Button>
                 </Grid>
                 
                 

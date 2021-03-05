@@ -20,11 +20,8 @@
             <StackPanel>
                 <TextBlock Text="Authorization" FontSize="30" FontWeight="Bold" Margin="0 0 0 20"></TextBlock>
 
-                <!-- TEST1 
-                <TextBlock x:Name="test_text" Text="Hello, buddy!" FontWeight="Bold" Margin="0 0 0 20"></TextBlock>
--->
                 <Grid Margin=" 0 0 0 20">
-                    <Button HorizontalAlignment="Left" Content="Sign up"></Button>
+                    <Button HorizontalAlignment="Left" Click="btn_to_main_form_click" Content="Sign up"></Button>
                     <Button HorizontalAlignment="Right" Content="Sign in" Style="{StaticResource MaterialDesignFlatButton}"></Button>
                 </Grid>
 

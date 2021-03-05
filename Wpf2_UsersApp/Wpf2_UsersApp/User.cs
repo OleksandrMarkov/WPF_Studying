@@ -39,5 +39,10 @@ namespace Wpf2_UsersApp
             this.password = password;
             this.email = email;
         }
+
+     /*   public override string ToString()
+        {
+            return "User: " + Login + "; Email: " + Email;
+        }*/
     }
 }
