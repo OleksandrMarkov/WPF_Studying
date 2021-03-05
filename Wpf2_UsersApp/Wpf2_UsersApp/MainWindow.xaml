@@ -24,11 +24,11 @@
                     <Button HorizontalAlignment="Right" Content="Sign in" Style="{StaticResource MaterialDesignFlatButton}"></Button>
                 </Grid>
                 <!-- text field-->
-                <TextBox materialDesign:HintAssist.Hint="Login: " Style="{StaticResource MaterialDesignFloatingHintTextBox}"></TextBox>
-                <PasswordBox materialDesign:HintAssist.Hint="Login: " Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"></PasswordBox>
-                <PasswordBox materialDesign:HintAssist.Hint="Password: " Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"></PasswordBox>
-                <TextBox materialDesign:HintAssist.Hint="Email: " Style="{StaticResource MaterialDesignFloatingHintTextBox}"></TextBox>
-                <Button Content="Sign in" Margin="0 20"></Button>
+                <TextBox x:Name="text_box_login" materialDesign:HintAssist.Hint="Login: " Style="{StaticResource MaterialDesignFloatingHintTextBox}"></TextBox>
+                <PasswordBox x:Name="text_box_password" materialDesign:HintAssist.Hint="Password: " Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"></PasswordBox>
+                <PasswordBox x:Name="text_box_password2" materialDesign:HintAssist.Hint="Confirm password: " Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"></PasswordBox>
+                <TextBox x:Name="text_box_email" materialDesign:HintAssist.Hint="Email: " Style="{StaticResource MaterialDesignFloatingHintTextBox}"></TextBox>
+                <Button Content="Sign up" Margin="0 20" Click="btn_sign_in_click"></Button>
             </StackPanel>
         </Border>
     </Grid>
