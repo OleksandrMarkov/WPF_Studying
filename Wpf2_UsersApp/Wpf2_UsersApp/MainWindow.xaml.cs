@@ -20,12 +20,27 @@ namespace Wpf2_UsersApp
     /// </summary>
     public partial class MainWindow : Window
     {
+        AppContext DB;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            DB = new AppContext();
+
+           /* TEST OF ADDING TO DB
+            * List<User> Users = DB.Users.ToList();
+            string str = "";
+
+            foreach (User user in Users)
+            {
+                str += "Login: " + user.Login + "; ";
+            }
+
+            test_text.Text = str;*/
         }
 
-        private void btn_sign_in_click(object sender, RoutedEventArgs e)
+        private void btn_sign_up_click(object sender, RoutedEventArgs e)
         {
             string login = text_box_login.Text.Trim();
             string password = text_box_password.Password.Trim();
@@ -73,6 +88,11 @@ namespace Wpf2_UsersApp
                 text_box_email.Text = "";
 
                 MessageBox.Show("all right!;)");
+
+                User user = new User(login, email, password);
+
+                DB.Users.Add(user);
+                DB.SaveChanges();
             }
         }
     }

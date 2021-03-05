@@ -19,16 +19,23 @@
             </Border.Effect>
             <StackPanel>
                 <TextBlock Text="Hello, buddy!" FontSize="30" FontWeight="Bold" Margin="0 0 0 20"></TextBlock>
+
+               <!-- TEST1 
+                <TextBlock x:Name="test_text" Text="Hello, buddy!" FontWeight="Bold" Margin="0 0 0 20"></TextBlock>
+-->
                 <Grid Margin=" 0 0 0 20">
                     <Button HorizontalAlignment="Left" Content="Sign up"></Button>
                     <Button HorizontalAlignment="Right" Content="Sign in" Style="{StaticResource MaterialDesignFlatButton}"></Button>
                 </Grid>
+                
+                
+                
                 <!-- text field-->
                 <TextBox x:Name="text_box_login" materialDesign:HintAssist.Hint="Login: " Style="{StaticResource MaterialDesignFloatingHintTextBox}"></TextBox>
                 <PasswordBox x:Name="text_box_password" materialDesign:HintAssist.Hint="Password: " Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"></PasswordBox>
                 <PasswordBox x:Name="text_box_password2" materialDesign:HintAssist.Hint="Confirm password: " Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"></PasswordBox>
                 <TextBox x:Name="text_box_email" materialDesign:HintAssist.Hint="Email: " Style="{StaticResource MaterialDesignFloatingHintTextBox}"></TextBox>
-                <Button Content="Sign up" Margin="0 20" Click="btn_sign_in_click"></Button>
+                <Button Content="Sign up" Margin="0 20" Click="btn_sign_up_click"></Button>
             </StackPanel>
         </Border>
     </Grid>

@@ -81,7 +81,14 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="AppContext.cs" />
+    <Compile Include="AuthorizationWindow1.xaml.cs">
+      <DependentUpon>AuthorizationWindow1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="User.cs" />
+    <Page Include="AuthorizationWindow1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
