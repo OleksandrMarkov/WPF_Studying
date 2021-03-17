@@ -13,6 +13,22 @@ namespace Wpf3_MVVM1
  
         public ObservableCollection<Phone> Phones { get; set; }
         
+        // команда добавления нового объекта
+        private RelayCommand addCommand;
+        public RelayCommand AddCommand
+        {
+            get
+            {
+                return addCommand ??
+                  (addCommand = new RelayCommand(obj =>
+                  {
+                      Phone phone = new Phone();
+                      Phones.Insert(0, phone);
+                      SelectedPhone = phone;
+                  }));
+            }
+        }    
+        
         public Phone SelectedPhone
         {
             get { return selectedPhone; }
